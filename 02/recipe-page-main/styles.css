@@ -1,0 +1,113 @@
+/* globals  */
+html{
+    font-size: 100%;
+    box-sizing:border-box;
+    /* font-family: Courier, monospace; */
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    /* padding: 0; */
+    
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height:1.3;
+}
+/* varibables  */
+:root{
+    --White: hsl(0, 0%, 100%);
+    
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --hero-bg-image: url('./assets/images/image-omelette.jpeg');
+    
+}
+h2 {color:var(--Brown-800) ;}
+h3{color: var(--Rose-800);
+padding-left: 1em;}
+/* container section styles */
+.container {
+    background-color: var(--Stone-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+/* card section style */
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 40%;
+    background-color: var(--White);
+    border-radius: .5em;
+   
+}
+
+.resizable-image {
+    width: 100%;  /* Fixed width in pixels */
+    height: 200px; /* Fixed height in pixels */
+    border-radius: .5em;
+  }
+  /* preparation-time-section */
+.preparation-time-section{
+    background-color: var(--Rose-50);
+    padding: 8px;
+    border-radius: .5em;
+}
+.preparation-time-section li::marker{
+    color: var(--Rose-800);
+}
+.preparation-time-section li{
+    padding-left: 1em;
+    padding-bottom: .3em;
+    
+}
+/* imgredients-section */
+.imgredients-section{
+    border-bottom: 1px solid var(--Stone-100);
+  
+}
+.imgredients-section ul{
+    padding: 17px;
+}
+.imgredients-section li {
+    padding-left: 1em;
+    padding-bottom: .3em;
+}
+.imgredients-section li::marker{
+    color: var(--Brown-800);
+    font-size: .8rem;
+}
+/* instruction-section */
+.instruction-section ol {
+    padding: 17px;
+}
+.instruction-section li {
+    padding-left: 1em;
+    padding-bottom: .3em;
+
+}
+.instruction-section li::marker{
+    color: var(--Brown-800);
+font-weight: bold;}
+.nutrition-section td {
+    border-bottom: 2px solid var(--Stone-100);
+    /* background-color: red; */
+}
+/* hero section styles */
+/* .hero {
+    background-image: var(--hero-bg-image);
+    background-size: cover;
+  background-position: center;
+  height: 70vh; 
+
+} */
