@@ -1,0 +1,111 @@
+@forward 'globals';
+@import 'variables';
+
+$breakpoint-mobile: 375px;
+body{
+    background-color: $prymary-gray-950;
+}
+.wraber {
+    background-color: $bg-yellow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width:$breakpoint-mobile){
+        margin: auto;
+        margin: 0 2rem;
+
+    }
+
+}
+.blog-card__container {
+    width: 327px;
+    height: 501px;
+    border-radius: 10px;
+    border: 2px solid $prymary-gray-950;
+    background-color: $prymary-white;
+    box-shadow:9px 9px 3px $prymary-gray-950;
+    transition: box-shadow 0.3s ease ;
+    padding: 24px;
+    @media (min-width:$breakpoint-mobile){
+        width: 384px;
+        height: 522px;
+
+    }
+    &:hover {
+        /* Hover styles */
+        box-shadow:12px 12px 3px $prymary-gray-950;
+        .blog-card__header{
+            transition:  color 0.3s ease ;
+            color: $bg-yellow;
+
+        }
+
+        
+      }
+ 
+}
+.blog-card__main-image{ 
+    margin-bottom: 24px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        border-radius: 10px;
+        
+        
+    }}
+    .blog-card__label {
+        background-color: $bg-yellow;
+        width: 73px;
+        height: 26px;
+        border-radius: 3px;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        p {
+            margin: auto;
+        }
+    }
+    .blog-card__published-date{
+        margin: 12px 0;
+        font-size: 14px;
+        line-height: 150%;
+    }
+.blog-card__header{
+    font-weight: bold;
+    font-size: 20px;
+max-width: 336px ;
+white-space: nowrap;
+@media (min-width:$breakpoint-mobile){
+    font-size: 24px;
+}
+
+}
+
+.blog-card__describtion{
+    color: $prymary-gray-500;
+    line-height: 150%;
+}
+.blog-card__footer{
+    display: flex;
+    align-items:center ;
+    .avatar img {
+        width: 32px; /* Set a reasonable width */
+        height: 32px; /* Match the height */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image fills the space proportionally */
+    }
+    h2{
+        font-size: medium;
+        margin: 0 12px;
+    }
+}
+.attribution {
+    color: $prymary-white;
+    a{
+        color: $prymary-white;
+    }
+}
+
